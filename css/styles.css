@@ -282,9 +282,216 @@ header {
 }
 
 .social-icons i {
+  cursor: pointer;
   margin-right: 28px;
 }
 
 .social-icons i:last-child {
   margin-right: 0;
+}
+
+.desktop-links {
+  display: none;
+}
+
+.transform-image-wrapper {
+  background-image: url("../images/mobile/image-transform.jpg");
+}
+
+.stand-out-image-wrapper {
+  background-image: url("../images/mobile/image-stand-out.jpg");
+}
+
+main > .image-wrapper {
+  min-height: 310px;
+  background-size: cover;
+  background-position: center;
+}
+
+.bottom-milkbottles-image {
+  background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
+}
+
+.bottom-orange-image {
+  background-image: url("../images/mobile/image-gallery-orange.jpg");
+}
+
+.bottom-cone-image {
+  background-image: url("../images/mobile/image-gallery-cone.jpg");
+}
+
+.bottom-cubes-image {
+  background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+}
+
+.bottom-images > .image-wrapper {
+  background-size: cover;
+  background-position: center;
+  min-height: 188px;
+}
+
+@media screen and (min-width: 1440px) {
+  .nav .hamburger-icon {
+    display: none;
+  }
+
+  .desktop-links {
+    display: block;
+  }
+
+  .desktop-links a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-right: 55px;
+  }
+
+  .desktop-links a:last-child {
+    margin-right: 0;
+  }
+
+  .visible-nav {
+    padding: 0 40px;
+  }
+
+  .desktop-links .btn-contact {
+    background-color: var(--white);
+    color: var(--very-dark-desaturated-blue);
+    font-family: "Fraunces";
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 22px 32px;
+    border-radius: 40px;
+  }
+
+  header {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+
+  .hero h1 {
+    margin-top: 128px;
+    margin-bottom: 102px;
+  }
+
+  .hero i {
+    margin-bottom: 324px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .image-wrapper img {
+    height: 100%;
+  }
+
+  .transform-your-brand-section {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .transform-image-wrapper {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+  }
+
+  .stand-out-image-wrapper {
+    grid-column: 1 / 3;
+  }
+
+  .stand-out-section {
+    grid-column: 3 / 5;
+  }
+
+  .graphic-design-image-wrapper {
+    grid-column: 1 / 3;
+  }
+
+  .photography-image-wrapper {
+    grid-column: 3 / 5;
+  }
+
+  .client-testimonials {
+    grid-column: 1 / 5;
+  }
+
+  .bottom-images {
+    grid-column: 1 / 5;
+  }
+
+  .testimonials-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom-images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .bottom-images > .image-wrapper {
+    min-height: 450px;
+  }
+
+  .bottom-milkbottles-image {
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+  }
+
+  .bottom-orange-image {
+    background-image: url("../images/desktop/image-gallery-orange.jpg");
+  }
+
+  .bottom-cone-image {
+    background-image: url("../images/desktop/image-gallery-cone.jpg");
+  }
+
+  .bottom-cubes-image {
+    background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+  }
+
+  .transform-image-wrapper {
+    background-image: url("../images/desktop/image-transform.jpg");
+  }
+
+  .stand-out-image-wrapper {
+    background-image: url("../images/desktop/image-stand-out.jpg");
+  }
+
+  .graphic-design-image-wrapper {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+
+  .photography-image-wrapper {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+
+  .section {
+    text-align: left;
+    padding: 170px 125px;
+  }
+
+  .section-v2 {
+    text-align: center;
+    padding-top: 408px;
+  }
+
+  .section-v2 .description {
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
+  .testimonial-description {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .footer ul li a:hover,
+  .social-icons i:hover {
+    color: var(--white);
+  }
+
+  .btn-contact:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--white);
+  }
 }
